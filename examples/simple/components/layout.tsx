@@ -1,4 +1,5 @@
 import Link from "next/link";
+import MyFooter from "./MyFooter";
 import { PropsWithChildren } from "react";
 import { useRouter } from "next/router";
 
@@ -46,6 +47,7 @@ export default function Layout({ children }: PropsWithChildren<Record<string, un
           </nav>
         </aside>
         <main className="flex-1">{children}</main>
+        
       </div>
     </div>
   );

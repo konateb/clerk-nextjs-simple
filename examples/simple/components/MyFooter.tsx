@@ -36,7 +36,7 @@ import {
 function MyFooter(): JSX.Element {
   return (
     <Footer container>
-      <div className="w-full">
+      <div className="fixed bottom-0 left-0 z-20 p-4 w-full bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
             <Footer.Brand

@@ -98,7 +98,7 @@ const Header: NextPage = () => {
             </li>
             <SignedIn>
               <li className=" text-blue-700">
-                <Link href="/dashborad">
+                <Link href="/dashboard">
                   <a>Mon cours</a>
                 </Link>
               </li>

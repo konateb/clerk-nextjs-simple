@@ -2,6 +2,7 @@ import { SignedIn, SignedOut, useClerk, useUser } from "@clerk/nextjs";
 
 import Image from "next/image";
 import Link from "next/link";
+import MyFooter from "../components/MyFooter";
 import type { NextPage } from "next";
 import React from "react";
 import styles from "../styles/Home.module.css";
@@ -157,8 +158,8 @@ const Home: NextPage = () => {
             </div>
           </div>
         </section>
-        
       </section>
+      <MyFooter />
     </>
   );
 };

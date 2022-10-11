@@ -182,8 +182,7 @@ function MyApp({ Component, pageProps }: AppProps) {
             </SignedOut>
           </>
         )}
-        <MyFooter />
-          
+                
         
       </ClerkLoaded>
     </ClerkProvider>
