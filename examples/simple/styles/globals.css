@@ -33,3 +33,7 @@ footer {
   justify-content: center;
   margin: 20px;
 }
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

@@ -4,20 +4,25 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
+    "build": "destack -b \"react-scripts build\"",
+    "start": "destack -d \"react-scripts start\"",
     "lint": "next lint"
   },
   "dependencies": {
     "@clerk/nextjs": "^3.7.0",
+    "flowbite": "^1.5.3",
+    "flowbite-react": "^0.1.11",
     "next": "12.2.2",
     "react": "18.2.0",
     "react-dom": "18.2.0"
   },
   "devDependencies": {
     "@types/react": "18.0.15",
+    "autoprefixer": "^10.4.12",
     "eslint": "8.0.1",
     "eslint-config-next": "12.2.2",
+    "postcss": "^8.4.16",
+    "tailwindcss": "^3.1.8",
     "typescript": "4.7.4"
   }
 }
