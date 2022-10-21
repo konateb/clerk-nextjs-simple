@@ -1,5 +1,6 @@
 import { SignedIn, SignedOut, UserButton, useClerk } from "@clerk/nextjs";
 
+import Image from "next/image";
 import Link from "next/link";
 import type { NextPage } from "next";
 import styles from "./Header.module.css";
@@ -13,29 +14,19 @@ import { useState } from "react";
 // https://clerk.dev/docs/component-reference/signed-in
 // https://clerk.dev/docs/component-reference/signed-out
 
-const Header: NextPage = () => {
+function Header(): JSX.Element {
   const { openSignIn, openSignUp } = useClerk();
   const [navbar, setNavbar] = useState(false);
 
   return (
-    <nav className="sticky top-0  z-10 w-full bg-white shadow">
+    <nav className=" top-0  z-10 w-full shadow">
       <div className="justify-between px-4 mx-auto lg:max-w-7xl md:items-center md:flex md:px-8">
         <div>
           <div className="flex items-center justify-between py-3 md:py-5 md:block">
             <Link href="/">
               <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  className="w-10 h-10 text-white p-2 bg-indigo-500 rounded-full"
-                >
-                  <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"></path>
-                </svg>
+                <Image src="/logokale.png" width="32" height="32" alt="Logo" />
+
                 <h2 className="text-2xl text-blue-700 font-bold">
                   KALE Academy
                 </h2>
@@ -85,32 +76,32 @@ const Header: NextPage = () => {
           }`}
         >
           <ul className="items-center justify-center space-y-8 md:flex md:space-x-6 md:space-y-0">
-            <li className=" text-blue-700">
+            <li className=" text-gray-700">
               <Link href="/">
                 <a>Home</a>
               </Link>
             </li>
 
-            <li className=" text-blue-700">
+            <li className=" text-gray-700">
               <Link href="/about">
                 <a>Qui sommes-nous?</a>
               </Link>
             </li>
             <SignedIn>
-              <li className=" text-blue-700">
+              <li className=" text-gray-700">
                 <Link href="/dashboard">
                   <a>Mon cours</a>
                 </Link>
               </li>
             </SignedIn>
 
-            <li className=" text-blue-700">
+            <li className=" text-gray-700">
               <Link href="/sponsor">
                 <a>Devenez sponsor</a>
               </Link>
             </li>
 
-            <li className=" text-blue-700">
+            <li className=" text-gray-700">
               <Link href="/contact">
                 <a>Nous contacter</a>
               </Link>

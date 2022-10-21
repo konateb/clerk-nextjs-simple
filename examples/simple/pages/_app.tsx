@@ -54,7 +54,7 @@ function MyApp({ Component, pageProps }: AppProps) {
     <ClerkProvider {...pageProps}>
       <ClerkLoaded>
         <Header />
-       
+
         {publicPages.includes(router.pathname) ? (
           <main>
             <Component {...pageProps} />
@@ -182,9 +182,8 @@ function MyApp({ Component, pageProps }: AppProps) {
             </SignedOut>
           </>
         )}
-                
-        
       </ClerkLoaded>
+      
     </ClerkProvider>
   );
 }

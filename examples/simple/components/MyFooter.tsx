@@ -33,29 +33,40 @@ import {
   BsTwitter,
 } from "react-icons/bs";
 
+import Image from "next/image";
+import Link from "next/link";
+
 function MyFooter(): JSX.Element {
   return (
     <Footer container>
-      <div className="fixed bottom-0 left-0 z-20 p-4 w-full bg-white border-t border-gray-200 shadow md:flex md:items-center md:justify-between md:p-6 dark:bg-gray-800 dark:border-gray-600">
+      <div className="w-full">
         <div className="grid w-full justify-between sm:flex sm:justify-between md:flex md:grid-cols-1">
           <div>
-            <Footer.Brand
-              href="https://flowbite.com"
-              src="https://flowbite.com/docs/images/logo.svg"
-              alt="Flowbite Logo"
-              name="Flowbite"
-            />
+            <Link href="/">
+              <a className="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
+                <Image
+                  src="/logokale.png"
+                  width={32}
+                  height={32}
+                  alt="Logo"
+                  className="flex items-center"
+                />
+
+                <span className="self-center text-2xl p-4 font-semibold whitespace-nowrap text-blue-700">
+                  KALE Academy
+                </span>
+              </a>
+            </Link>
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <Footer.Title title="about" />
+              <Footer.Title title="Notre mission" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Flowbite</Footer.Link>
-                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+                <Footer.Link href="#">Mission</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>
-              <Footer.Title title="Follow us" />
+              <Footer.Title title="Suivez-nous" />
               <Footer.LinkGroup col>
                 <Footer.Link href="#">Github</Footer.Link>
                 <Footer.Link href="#">Discord</Footer.Link>
@@ -72,7 +83,7 @@ function MyFooter(): JSX.Element {
         </div>
         <Footer.Divider />
         <div className="w-full sm:flex sm:items-center sm:justify-between">
-          <Footer.Copyright href="#" by="Flowbite™" year={2022} />
+          <Footer.Copyright href="#" by="Kale Academy™" year={2022} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} />
             <Footer.Icon href="#" icon={BsInstagram} />
