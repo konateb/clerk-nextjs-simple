@@ -34,32 +34,37 @@ const Home: NextPage = () => {
           <div className="relative pt-36 ml-auto">
             <div className="lg:w-2/3 text-center mx-auto">
               <h1 className="text-gray-900 dark:text-white font-bold text-5xl md:text-6xl xl:text-7xl">
-                Learn to build web apps with modern technologies{" "}
-                <span className="text-primary dark:text-white">
-                  reimagination.
-                </span>
+                <div>
+                  Dites hello{" "}
+                  <span className="  text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500">
+                    Formation téléprésentielle!{" "}
+                  </span>
+                  <h2 className="text-lg font-extrabold text-gray-700 dark:text-white">
+                    {" "}
+                    <span className="  text-transparent bg-clip-text bg-gradient-to-r from-blue-500 to-purple-500"></span>
+                  </h2>
+                </div>
               </h1>
-              <p className="mt-8 text-gray-700 dark:text-gray-300">
-                The most efficient way to learn in-demand skills and get hired
-                or build the app for your next startup or side project.
-              </p>
+              <h3 className="mt-8 text-lg font-semibold text-gray-700 dark:text-gray-300">
+                Une approche pédagogique interactive avec un instructeur live en ligne.
+              </h3>
 
               <div className="hidden py-8 mt-16 border-y border-gray-100 dark:border-gray-800 sm:flex justify-between">
                 <div className="text-left">
                   <h6 className="text-lg font-semibold text-gray-700 dark:text-white">
-                    The lowest price
+                    Des prix accessibles
                   </h6>
                   <p className="mt-2 text-gray-500">Some text here</p>
                 </div>
                 <div className="text-left">
                   <h6 className="text-lg font-semibold text-gray-700 dark:text-white">
-                    The fastest on the market
+                    Code. Teste. Delpoie
                   </h6>
                   <p className="mt-2 text-gray-500">Some text here</p>
                 </div>
                 <div className="text-left">
                   <h6 className="text-lg font-semibold text-gray-700 dark:text-white">
-                    The most loved
+                    Une communauté de passionnés
                   </h6>
                   <p className="mt-2 text-gray-500">Some text here</p>
                 </div>
